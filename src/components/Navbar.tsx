@@ -1,6 +1,6 @@
 export const Navbar = () => {
   return (
-    <nav className="uppercase flex space-x-40 items-center px-24 py-12">
+    <nav className="uppercase flex space-x-40 items-center py-12 max-w-screen-xl mx-auto">
       <h1 className="font-semibold">Masskara 2023</h1>
 
       <ul className="flex space-x-24 text-sm">
