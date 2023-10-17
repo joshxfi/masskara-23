@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 
 import "./globals.css";
-import { Navbar } from "@/components";
+import { GSAP, Navbar } from "@/components";
 
 const ppmori = localFont({
   src: [
@@ -38,8 +38,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${ppmori.className} text-secondary-100`}>
-        <Navbar />
-        {children}
+        <GSAP>
+          <Navbar />
+          {children}
+        </GSAP>
       </body>
     </html>
   );
