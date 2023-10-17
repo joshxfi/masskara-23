@@ -11,6 +11,11 @@ const config: Config = {
       fontFamily: {
         bosch: ["var(--font-bosch)"],
       },
+      colors: {
+        secondary: {
+          100: "#2F2F2F",
+        },
+      },
     },
   },
   plugins: [],
