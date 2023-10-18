@@ -1,5 +1,6 @@
 import Image from "next/image";
 import localFont from "next/font/local";
+import { Grid } from "@/components";
 
 const bosch = localFont({
   src: "./fonts/BoschRegular.woff2",
@@ -52,25 +53,9 @@ export default function Home() {
             View Schedule &rarr;
           </button>
         </div>
-
-        <p className="text-xl max-w-sm text-right mt-32 ml-[500px] font-extralight text">
-          Renowned for its captivating masks, colorful costumes, and energetic
-          street dances, symbolizing the community’s resilience, happiness, and
-          unity in the face of challenges.
-        </p>
-
-        <p className="text-xl max-w-sm text-right mt-32 ml-[500px] font-extralight text">
-          Renowned for its captivating masks, colorful costumes, and energetic
-          street dances, symbolizing the community’s resilience, happiness, and
-          unity in the face of challenges.
-        </p>
-
-        <p className="text-xl max-w-sm text-right mt-32 ml-[500px] font-extralight text">
-          Renowned for its captivating masks, colorful costumes, and energetic
-          street dances, symbolizing the community’s resilience, happiness, and
-          unity in the face of challenges.
-        </p>
       </div>
+
+      <Grid />
 
       <Image
         id="mask"
