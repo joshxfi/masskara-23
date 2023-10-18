@@ -1,47 +1,89 @@
 "use client";
 
 import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { useLayoutEffect, useRef, ReactNode } from "react";
 
 export const GSAP = ({ children }: { children: ReactNode }) => {
   const comp = useRef<HTMLDivElement>(null);
 
+  gsap.registerPlugin(ScrollTrigger);
+
   useLayoutEffect(() => {
     let ctx = gsap.context(() => {
-      gsap.fromTo(
-        ".text",
-        {
-          x: -1000,
-          opacity: 0,
-        },
-        { x: 0, opacity: 1, duration: 1.5, ease: "power2.out", stagger: 0.5, delay: 1 }
-      );
+      gsap.from(".nav", {
+        y: -200,
+        opacity: 0,
+        duration: 1,
+        ease: "power2.out",
+        stagger: 0.5,
+        delay: 2,
+      });
 
-      gsap.fromTo(
-        "#mask",
-        {
-          x: 1000,
-          opacity: 0,
-        },
-        { x: 0, opacity: 1, duration: 1.5, ease: "power2.out" }
-      );
+      gsap.from("#mask", {
+        x: 1000,
+        opacity: 0,
+        duration: 1.5,
+        ease: "power2.out",
+      });
 
-      gsap.fromTo(
-        ".nav",
-        {
-          y: -200,
-          opacity: 0,
+      gsap.to("#mask", {
+        scrollTrigger: {
+          trigger: "#mask",
+          markers: process.env.NODE_ENV === "development",
+          start: "center center",
+          scrub: 0.7,
         },
-        {
-          y: 0,
-          opacity: 1,
-          duration: 1.5,
-          ease: "power2.out",
-          stagger: 0.5,
-          delay: 2,
-        }
-      );
-    }, comp);
+        y: 300,
+        duration: 3,
+        ease: "power4.out",
+      });
+
+      gsap.from(".anim-tr", {
+        x: -1000,
+        opacity: 0,
+        duration: 1.5,
+        ease: "power2.out",
+        stagger: 0.5,
+        delay: 1,
+      });
+
+      gsap.from(".anim-tt", {
+        opacity: 0,
+        duration: 2,
+        ease: "power2.out",
+        stagger: 0.5,
+        delay: 4,
+      });
+
+      gsap.from(".trig-tr", {
+        scrollTrigger: {
+          trigger: ".trig-tr",
+          markers: process.env.NODE_ENV === "development",
+          start: "top bottom",
+          scrub: 0.7,
+        },
+        x: -1000,
+        opacity: 0,
+        duration: 2,
+        stagger: 0.5,
+        ease: "power2.out",
+      });
+
+      gsap.to(".trig-tl", {
+        scrollTrigger: {
+          trigger: ".trig-tl",
+          markers: process.env.NODE_ENV === "development",
+          start: "bottom top",
+          scrub: 0.7,
+        },
+        x: -1000,
+        opacity: 0,
+        duration: 2,
+        stagger: 0.5,
+        ease: "power2.out",
+      });
+    });
 
     return () => ctx.revert();
   }, []);

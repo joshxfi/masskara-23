@@ -10,22 +10,60 @@ const bosch = localFont({
 
 export default function Home() {
   return (
-    <main>
+    <main className="pb-24">
       <div className="max-w-screen-xl mx-auto mt-52 text-black">
         <div>
           <h1
-            className={`${bosch.className} uppercase text-[150px] leading-none text`}
+            className={`${bosch.className} uppercase text-[150px] leading-none anim-tr`}
           >
             Masskara
           </h1>
 
-          <div className="flex items-center space-x-12 font-ppmori text">
+          <div className="flex items-center space-x-12 font-ppmori anim-tr">
             <h2 className="font-extralight text-8xl">2023 </h2>
             <a href="#" className="text-3xl uppercase font-extralight">
-              View Schedule &rarr;
+              Learn More &rarr;
             </a>
           </div>
         </div>
+
+        <p className="text-xl max-w-sm text-right mt-32 ml-[500px] font-extralight text anim-tt">
+          Renowned for its captivating masks, colorful costumes, and energetic
+          street dances, symbolizing the community’s resilience, happiness, and
+          unity in the face of challenges.
+        </p>
+
+        <div className="mt-72">
+          <h1
+            className={`${bosch.className} uppercase text-8xl leading-none text-black trig-tr`}
+          >
+            Embrace the Smiles
+          </h1>
+          <h1
+            className={`${bosch.className} uppercase text-8xl leading-none text-black trig-tr`}
+          >
+            Feel the Rhythm
+          </h1>
+
+          <button
+            type="button"
+            className="rounded-md border-2 border-black px-6 py-3 text-xl mt-6 trig-tr"
+          >
+            View Schedule &rarr;
+          </button>
+        </div>
+
+        <p className="text-xl max-w-sm text-right mt-32 ml-[500px] font-extralight text">
+          Renowned for its captivating masks, colorful costumes, and energetic
+          street dances, symbolizing the community’s resilience, happiness, and
+          unity in the face of challenges.
+        </p>
+
+        <p className="text-xl max-w-sm text-right mt-32 ml-[500px] font-extralight text">
+          Renowned for its captivating masks, colorful costumes, and energetic
+          street dances, symbolizing the community’s resilience, happiness, and
+          unity in the face of challenges.
+        </p>
 
         <p className="text-xl max-w-sm text-right mt-32 ml-[500px] font-extralight text">
           Renowned for its captivating masks, colorful costumes, and energetic
