@@ -48,7 +48,7 @@ export default function Home() {
 
           <button
             type="button"
-            className="rounded-md border-2 border-black px-6 py-3 text-xl mt-6 trig-tr"
+            className="rounded-md border border-black px-6 py-3 text-xl mt-6 trig-tr"
           >
             View Schedule &rarr;
           </button>
