@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export const Grid = () => {
   return (
-    <section className="mt-48 border-y border-black px-6">
+    <section className="mt-48 border-y border-black mb-16">
       <div className="max-w-screen-xl mx-auto flex">
         <div className="border-x border-black w-[500px]">
           <div className="p-8">
@@ -20,7 +20,7 @@ export const Grid = () => {
             </div>
           </div>
 
-          <div className="flex p-8 border-t border-black">
+          <div className="flex mt-14 justify-center p-8 border-t border-black">
             <Image
               width={864}
               height={417}
