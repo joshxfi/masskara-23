@@ -29,7 +29,7 @@ export const GSAP = ({ children }: { children: ReactNode }) => {
         opacity: 0,
         duration: 1,
         ease: "power2.out",
-        stagger: 0.5,
+        stagger: 0.3,
         delay: 2,
       });
 
@@ -57,7 +57,7 @@ export const GSAP = ({ children }: { children: ReactNode }) => {
         opacity: 0,
         duration: 1.5,
         ease: "power2.out",
-        stagger: 0.5,
+        stagger: 0.3,
         delay: 1,
       });
 
