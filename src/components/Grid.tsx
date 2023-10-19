@@ -40,7 +40,7 @@ export const Grid = () => {
         </div>
 
         <div className="w-[500px] border-r border-black">
-          <div className="p-8 text-xl leading-relaxed">
+          <div className="p-8 leading-relaxed">
             <p>
               “Come to Super City and savor the delightful MassKara Festival!
               Enjoy good food and experience the warm embrace of
@@ -65,7 +65,7 @@ export const Grid = () => {
               width={1462}
               height={1155}
               src="/images/full-logo.png"
-              className="w-full object-contain"
+              className="w-full object-contain bounce"
               alt="Masskara"
             />
           </div>

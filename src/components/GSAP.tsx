@@ -69,6 +69,13 @@ export const GSAP = ({ children }: { children: ReactNode }) => {
         delay: 4,
       });
 
+      gsap.from(".bounce", {
+        y: 5,
+        duration: 1.5,
+        yoyoEase: "power2.out",
+        repeat: -1,
+      });
+
       gsap.from(".trig-tr", {
         scrollTrigger: {
           trigger: ".trig-tr",

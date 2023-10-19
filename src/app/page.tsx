@@ -11,7 +11,7 @@ const bosch = localFont({
 
 export default function Home() {
   return (
-    <main className="pb-24">
+    <main>
       <div className="max-w-screen-xl mx-auto mt-52 text-black">
         <div>
           <h1
