@@ -12,43 +12,43 @@ const bosch = localFont({
 export default function Home() {
   return (
     <main>
-      <div className="max-w-screen-xl mx-auto mt-52 text-black">
-        <div>
+      <div className="max-w-screen-xl mx-auto lg:mt-52 mt-24 text-black">
+        <div className='px-6'>
           <h1
-            className={`${bosch.className} uppercase text-[150px] leading-none anim-tr`}
+            className={`${bosch.className} uppercase lg:text-[150px] text-8xl md:text-9xl leading-none anim-tr`}
           >
             Masskara
           </h1>
 
-          <div className="flex items-center space-x-12 font-ppmori anim-tr">
-            <h2 className="font-extralight text-8xl">2023 </h2>
-            <a href="#" className="text-3xl uppercase font-extralight">
+          <div className="flex items-center lg:space-x-12 space-x-6 font-ppmori anim-tr">
+            <h2 className="font-extralight lg:text-8xl text-5xl">2023 </h2>
+            <a href="#" className="lg:text-3xl text-xl uppercase font-extralight">
               Learn More &rarr;
             </a>
           </div>
         </div>
 
-        <p className="text-xl max-w-sm text-right mt-32 ml-[500px] font-extralight text anim-tt">
+        <p className="md:text-xl md:max-w-sm max-w-xs xl:text-right px-6 mt-32 lg:ml-[200px] 2xl:ml-[500px] font-extralight anim-tt">
           Renowned for its captivating masks, colorful costumes, and energetic
           street dances, symbolizing the community’s resilience, happiness, and
           unity in the face of challenges.
         </p>
 
-        <div className="mt-72">
+        <div className="mt-72 px-6">
           <h1
-            className={`${bosch.className} uppercase text-8xl leading-none text-black trig-tr`}
+            className={`${bosch.className} uppercase lg:text-8xl text-3xl md:text-4xl leading-none text-black trig-tr`}
           >
             Embrace the Smiles
           </h1>
           <h1
-            className={`${bosch.className} uppercase text-8xl leading-none text-black trig-tr`}
+            className={`${bosch.className} uppercase lg:text-8xl text-4xl leading-none text-black trig-tr`}
           >
             Feel the Rhythm
           </h1>
 
           <button
             type="button"
-            className="rounded-md border border-black px-6 py-3 text-xl mt-6 trig-tr"
+            className="rounded-md border border-black px-6 py-3 lg:text-xl mt-6 trig-tr"
           >
             View Schedule &rarr;
           </button>
@@ -65,7 +65,7 @@ export default function Home() {
         height={1201}
         quality={100}
         alt="Masskara Logo"
-        className="absolute right-0 object-contain w-[600px] top-0 pointer-events-none"
+        className="absolute right-0 object-contain xl:w-[600px] w-[200px] lg:top-40 xl:top-0 top-96 md:top-80 pointer-events-none sm:w-[300px] md:w-[400px]"
       />
     </main>
   );

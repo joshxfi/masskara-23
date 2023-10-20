@@ -20,7 +20,7 @@ export const Grid = () => {
             </div>
           </div>
 
-          <div className="flex mt-14 justify-center p-8 border-t border-black">
+          <div className="flex mt-14 justify-center flex-col lg:flex-row p-8 border-t space-y-24 lg:space-y-0 border-black">
             <Image
               width={864}
               height={417}
@@ -40,7 +40,7 @@ export const Grid = () => {
         </div>
 
         <div className="w-[500px] border-r border-black">
-          <div className="p-8 leading-relaxed">
+          <div className="p-8 leading-relaxed text-sm lg:text-base">
             <p>
               “Come to Super City and savor the delightful MassKara Festival!
               Enjoy good food and experience the warm embrace of
